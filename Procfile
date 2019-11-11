@@ -1,1 +1,1 @@
-web: java -jar target/medlife-0.0.1-SNAPSHOT.jar
+web: java -jar -Dserver.port=$PORT target/medlife-0.0.1-SNAPSHOT.jar
