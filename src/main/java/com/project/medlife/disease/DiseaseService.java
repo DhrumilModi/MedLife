@@ -15,8 +15,9 @@ public class DiseaseService {
 		return diseaseRepo.findAll();
 	}
 
-	public void addDisease(Disease disease) {
+	public String addDisease(Disease disease) {
 		diseaseRepo.save(disease);
+		return "saved";
 	}
 
 	public void deleteDisease(int diseaseId) {
