@@ -25,7 +25,7 @@ public class SubDiseaseController {
 		return subDiseaseService.getAllSubDiseaseByDiseaseId(diseaseId);
 	}
 	
-	@PostMapping(value = "/deleteDisease/{subDiseaseId}")
+	@PostMapping(value = "/deleteSubDisease/{subDiseaseId}")
 	public void deleteDisease(@PathVariable("subDiseaseId") int subDiseaseId) {
 		subDiseaseService.deleteSubDisease(subDiseaseId);
 	}
