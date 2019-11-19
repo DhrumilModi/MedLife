@@ -14,4 +14,8 @@ public class SubDiseaseService {
 	public List<SubDisease> getAllSubDisease() {
 		return subDiseaseRepo.findAll();
 	}
+	
+	public List<SubDisease> getAllSubDiseaseByDiseaseId(int diseaseId){
+		return subDiseaseRepo.findByDiseaseDiseaseId(diseaseId);
+	}
 }
